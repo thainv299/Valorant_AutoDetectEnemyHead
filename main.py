@@ -83,6 +83,8 @@ class YoloTesterApp:
         try:
             # 1. Load model
             model = YOLO(self.model_path)
+            # Sửa lỗi dataset: 2 class bị tráo tên cho nhau
+            model.model.names = {0: 'head', 1: 'enemy'}
             
             # 2. Lấy thông số từ UI
             conf_value = float(self.conf_slider.get())
@@ -96,7 +98,8 @@ class YoloTesterApp:
                 show=True,         # Hiển thị cửa sổ xem trực tiếp
                 save=is_save,      # Lưu video hay không
                 conf=conf_value,   # Lọc độ tự tin
-                iou=0.45           # Chống vẽ đè nhiều box
+                iou=0.45,          # Chống vẽ đè nhiều box
+                line_width=1       # Viền bounding box mỏng
             )
 
         except Exception as e:
