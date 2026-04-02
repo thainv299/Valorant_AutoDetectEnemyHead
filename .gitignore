@@ -1,0 +1,83 @@
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ===========================
+# Virtual Environment
+# ===========================
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# ===========================
+# IDE / Editor
+# ===========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# ===========================
+# OS Generated
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ===========================
+# YOLO / Ultralytics
+# ===========================
+# Trained model weights
+models/*.pt
+results/**/*.pt
+
+# YOLO training runs output
+runs/
+
+# ===========================
+# Dataset
+# ===========================
+valorant_head_dataset/train/
+valorant_head_dataset/valid/
+valorant_head_dataset/test/
+
+# ===========================
+# Media files
+# ===========================
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.wmv
+
+# ===========================
+# Jupyter Notebook
+# ===========================
+.ipynb_checkpoints/
+
+# ===========================
+# Misc
+# ===========================
+*.log
+*.tmp
+*.bak
