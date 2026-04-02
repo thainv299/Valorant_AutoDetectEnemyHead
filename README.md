@@ -161,7 +161,8 @@ Augmentation được thiết kế **riêng cho ngữ cảnh game Valorant**:
 ## 📊 Kết quả huấn luyện
 
 Kết quả được lưu tại `results/Valorant_AI/yolo26n_head_v1/`:
-
+![Kết quả trainning 1](assets/trainning_result.png)
+![Kết quả trainning 2](assets/trainning_result2.png)
 | File | Mô tả |
 |---|---|
 | `results.png` | Biểu đồ loss & metrics qua các epoch |
